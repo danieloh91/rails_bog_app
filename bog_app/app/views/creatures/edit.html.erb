@@ -1,5 +1,9 @@
+<h1>Creature.edit page</h1>
+
 <%= form_for @creature do |f| %>
-    <strong>Name:</strong> <%= f.text_field :name %>
-    <strong>Description:</strong> <%= f.text_field :description %>
-    <%= f.submit "Save Creature" %>
-  <% end %>
+  <strong>Name:</strong> <%= f.text_field :name %>
+  <strong>Description:</strong> <%= f.text_field :description %>
+  <%= f.submit "Save Creature" %>
+<% end %>
+
+<%= link_to "Back to all", creatures_path %>

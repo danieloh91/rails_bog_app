@@ -1,0 +1,11 @@
+<h1>Creature Index page</h1>
+
+<% @creatures.each do |creature| %>
+  <ul>
+    <li>
+      <strong>Id:</strong> <%= creature.id %><br>
+      <strong>Name:</strong> <%= creature.name %><br>
+      <strong>Description:</strong> <%= creature.description %>
+    </li>
+  </ul>
+<% end %>

@@ -7,7 +7,7 @@
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid col-md-8 col-md-offset-2">
   <h1>Show Creature Page</h1>
 
   <strong>Id:</strong> <%= @creature.id %><br>
@@ -15,5 +15,6 @@
   <strong>Description:</strong> <%= @creature.description %><br>
 
   <%= button_to "Delete Creature", @creature, method: :delete %>
-  <%= link_to "Back", creatures_path %>
+  <%= link_to "Back", creatures_path %><br>
+  <%= link_to "Edit", edit_creature_path %>
 </div>

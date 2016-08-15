@@ -1,8 +1,19 @@
-<h1>Show Creature Page</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Home", creatures_path %></li>
+      <li><%= link_to "Create New Creature", new_creature_path %></li>
+    </ul>
+  </div>
+</nav>
 
-<strong>Id:</strong> <%= @creature.id %><br>
-<strong>Name:</strong> <%= @creature.name %><br>
-<strong>Description:</strong> <%= @creature.description %><br>
+<div class="container-fluid">
+  <h1>Show Creature Page</h1>
 
-<%= button_to "Delete Creature", @creature, method: :delete %>
-<%= link_to "Back", creatures_path %>
+  <strong>Id:</strong> <%= @creature.id %><br>
+  <strong>Name:</strong> <%= @creature.name %><br>
+  <strong>Description:</strong> <%= @creature.description %><br>
+
+  <%= button_to "Delete Creature", @creature, method: :delete %>
+  <%= link_to "Back", creatures_path %>
+</div>

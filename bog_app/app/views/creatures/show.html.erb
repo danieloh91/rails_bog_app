@@ -3,3 +3,5 @@
 <strong>Id:</strong> <%= @creature.id %><br>
 <strong>Name:</strong> <%= @creature.name %><br>
 <strong>Description:</strong> <%= @creature.description %><br>
+
+<%= button_to "Delete Creature", @creature, method: :delete %>
